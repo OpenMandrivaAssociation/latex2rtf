@@ -1,5 +1,5 @@
 %define name	latex2rtf
-%define version 2.0.0
+%define version 2.1.0
 %define release %mkrel 1
 
 Summary:	LaTeX to RTF converter
