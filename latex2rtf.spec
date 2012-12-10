@@ -52,3 +52,14 @@ Macintosh).
 %{_sysconfdir}/%{name}
 %{_infodir}/*
 %{_mandir}/man1/*
+
+
+%changelog
+* Fri May 28 2010 Lev Givon <lev@mandriva.org> 2.1.0-1mdv2011.0
++ Revision: 546541
+- Update to 2.1.0.
+
+* Fri Feb 19 2010 Lev Givon <lev@mandriva.org> 2.0.0-1mdv2010.1
++ Revision: 508335
+- import latex2rtf
+
