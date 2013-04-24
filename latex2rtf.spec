@@ -36,8 +36,6 @@ Macintosh).
 %__install -d -m 755 %{buildroot}%{_infodir}
 %__install -m 644 doc/%{name}.info %{buildroot}%{_infodir}
 
-%post
-%_install_info %{name}.info
 
 %postun
 %_remove_install_info %{name}.info
