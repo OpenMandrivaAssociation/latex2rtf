@@ -37,8 +37,6 @@ Macintosh).
 %__install -m 644 doc/%{name}.info %{buildroot}%{_infodir}
 
 
-%postun
-%_remove_install_info %{name}.info
 
 %clean
 %__rm -rf %{buildroot}
