@@ -1,16 +1,11 @@
-%define name	latex2rtf
-%define version 2.1.0
-%define release %mkrel 1
-
 Summary:	LaTeX to RTF converter
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		latex2rtf
+Version:	2.1.0
+Release:	2
 Source0:	%{name}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Publishing
 Url:		http://latex2rtf.sourceforge.net/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	tetex-latex, tetex-dvips, imagemagick
 
 %description
@@ -27,7 +22,6 @@ Macintosh).
 %make PREFIX=/usr INFO_INSTALL=%{_infodir} MAN_INSTALL=%{_mandir}/man1 CFG_INSTALL=%{_sysconfdir}/%{name} SUPPORT_INSTALL=%{_datadir}/doc/%{name} 
 
 %install
-%__rm -rf %{buildroot}
 %__install -d -m 755 %{buildroot}%{_datadir}/doc/%{name}
 %__make PREFIX=%{buildroot}/usr \
 	 MAN_INSTALL=%{buildroot}%{_mandir}/man1 \
@@ -38,11 +32,7 @@ Macintosh).
 
 
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog Copyright README
 %{_bindir}/*
 %{_sysconfdir}/%{name}
