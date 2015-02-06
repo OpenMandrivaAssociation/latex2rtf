@@ -1,7 +1,7 @@
 Summary:	LaTeX to RTF converter
 Name:		latex2rtf
 Version:	2.1.0
-Release:	2
+Release:	3
 Source0:	%{name}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Publishing
