@@ -5,7 +5,7 @@ Release:	3
 Source0:	%{name}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Publishing
-Url:		http://latex2rtf.sourceforge.net/
+Url:		https://latex2rtf.sourceforge.net/
 Requires:	tetex-latex, tetex-dvips, imagemagick
 
 %description
